@@ -149,11 +149,11 @@ var AsciiMorph = (function() {
     data[line] = replaceAt(data[line], end, " ");
 
     if( !((end - 1) == (start + 1)) && !(start === end) && !((start + 1) === end)) {
-      data[line + crushDirection] = replaceAt(data[line + crushDirection], (start + 1), '*');
-      data[line + crushDirection] = replaceAt(data[line + crushDirection], (end - 1), '*');
+      data[line + crushDirection] = replaceAt(data[line + crushDirection], (start + 1), '+*/\\'.substr(Math.floor(Math.random()*'+*/\\'.length), 1));
+      data[line + crushDirection] = replaceAt(data[line + crushDirection], (end - 1), '+*/\\'.substr(Math.floor(Math.random()*'+*/\\'.length), 1));
     } else if ((((start === end) || (start + 1) === end)) && ((line + 1) !== centers.y && (line - 1) !== centers.y && line !== centers.y)) {
-      data[line + crushDirection] = replaceAt(data[line + crushDirection], (start), '*');
-      data[line + crushDirection] = replaceAt(data[line + crushDirection], (end), '*');    
+      data[line + crushDirection] = replaceAt(data[line + crushDirection], (start), '+*/\\'.substr(Math.floor(Math.random()*'+*/\\'.length), 1));
+      data[line + crushDirection] = replaceAt(data[line + crushDirection], (end), '+*/\\'.substr(Math.floor(Math.random()*'+*/\\'.length), 1));
     }
     
     return data;
