@@ -2,7 +2,7 @@
 AsciiMorph is a small stand alone javascript library for rendering ascii art and creations into elements, allowing for them to be changed out with a morphing transition.
 
 ### Demo
-Here's a gif of it in action. You can also play with the demo live here.
+Here's a gif of it in action. You can also play with the [demo live here](http://codepen.io/tholman/full/BQLQyo).
 
 ![Ascii Morph in action](https://s3.amazonaws.com/tholman.com/static-assets/ascii-morph-demo.gif)
 
