@@ -8,10 +8,8 @@ var AsciiMorph = (function() {
   'use strict';
   
   var element = null;
-  var canvasDimensions = {
-    x: 51,
-    y: 28
-  }
+  var canvasDimensions = {};
+  
   var renderedData = [];
   var framesToAnimate = [];
   var myTimeout = null;
@@ -47,10 +45,11 @@ var AsciiMorph = (function() {
    * AsciiMorph
    */
 
-  function init(el) {
+  function init(el, canvasSize) {
     
     // Save the element
     element = el;
+    canvasDimensions = canvasSize;
   }
   
   function squareOutData(data) {
@@ -232,8 +231,14 @@ var AsciiMorph = (function() {
     // framesToAnimate
   }
 
-  function main(element) {
-    init(element);
+  function main(element, canvasSize) {
+    
+    if( !element || !canvasSize ) {
+      console.log("sorry, I need an element and a canvas size");
+      return;   
+    }
+    
+    init(element, canvasSize);
   }
 
   return extend(main, {
