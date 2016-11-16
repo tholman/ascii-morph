@@ -77,7 +77,7 @@ var mona = [
 AsciiMorph.render(bird);
 
 // Then morph, to a new creation
-AsciiMorpy.morph(mona);
+AsciiMorph.morph(mona);
 
 ```
 
