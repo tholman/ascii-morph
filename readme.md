@@ -4,7 +4,7 @@ AsciiMorph is a small stand alone javascript library for rendering ascii art and
 ### Demo
 Here's a gif of it in action. You can also play with the demo live here.
 
-![Ascii Morph in action](https://s3.amazonaws.com/tholman.com/static-assets/ascii-morph.gif)
+![Ascii Morph in action](https://s3.amazonaws.com/tholman.com/static-assets/ascii-morph-demo.gif)
 
 ### Usage
 
