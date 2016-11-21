@@ -13,7 +13,7 @@ You'll need an `dom` element for the ascii's to be rendered within.
 ```html
 <!-- Pre elements are perfect for this. -->
 <pre class="ascii-element">
-</div>
+</pre>
 ```
 
 Next up, you will want to initialize the library. The second parameter is the `width` and `height` properties you want in your rendering square. The ascii will be rendered centered within them, and fill the rest with white space. Naturally this looks best with monospace fonts.
